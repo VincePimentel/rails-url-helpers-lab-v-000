@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
     @student.active = !@student.active
     @student.save
 
-    render "#{activate_student_path}"
+    render "student_path"
   end
 
   private
